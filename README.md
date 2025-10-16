@@ -71,22 +71,5 @@ Once the application is running, you will typically see output indicating the se
 
 http://127.0.0.1:5000/
 
-### Notes on Database
-The application uses two SQLite database files:
-
-| ibrary.db: Likely stores the book and member records. |
-| borrows.db: Likely tracks the loan transactions. |
-
-These files will be created (or already exist) when you run the application.
-
-## 💡 How to Contribute
-If you'd like to contribute, please follow these steps:
-Fork the repository.
-Create a new branch (git checkout -b feature/new-feature).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/new-feature).
-Create a new Pull Request.
-
 ### 📄 License
 This project is open-source. Please check the repository for a specific license file (e.g., LICENSE.md). If no explicit license is provided, standard GitHub public repository terms apply
