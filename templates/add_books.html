@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+  />
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center text-primary mb-4">Add Books</h1>
+
+      <div class="card shadow mx-auto" style="max-width: 500px">
+        <div class="card-body">
+          <form method="POST" action="{{ url_for('add_books') }}">
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                name="title"
+                placeholder="Enter book title"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="author" class="form-label">Author</label>
+              <input
+                type="text"
+                class="form-control"
+                id="author"
+                name="author"
+                placeholder="Enter Author name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+                <label for="available_copies" class="form-label">Available Copies</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="available_copies"
+                  name="available_copies"
+                  placeholder="Enter Available copies"
+                  required
+                />
+              </div>
+
+            <button type="submit" class="btn btn-success w-100">
+              Add Member
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
+  </body>
+  </html>

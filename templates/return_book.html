@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return Book</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center text-primary mb-4">Return Book</h1>
+      <div class="card mx-auto shadow" style="max-width: 500px; padding: 20px">
+        <form method="POST">
+          <div class="mb-3">
+            <label class="form-label">Select Borrowed Book</label>
+            <select class="form-select" name="borrow_id" required>
+              {% for b in borrows %}
+              <option value="{{ b.borrow_id }}">
+                {{ b.book_title }} borrowed by {{ b.member_name }}
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success w-100">
+            Return Book
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
+  </body>
+</html>
