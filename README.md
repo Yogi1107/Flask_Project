@@ -1,10 +1,10 @@
-# 📚 Flask Library Management System
+# Flask Library Management System
 
 This is a web application built with **Flask** for managing a small library's collection of books and tracking member borrowing activity. It provides a simple interface for librarians to add books, register members, and log book borrowing and returning.
 
 ---
 
-## ✨ Features
+## Features
 
 * **Book Management:** Add new books, view the entire collection, and check book availability.
 * **Member Management:** Register new library members.
@@ -14,7 +14,7 @@ This is a web application built with **Flask** for managing a small library's co
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Description |
 | :--- | :--- |
@@ -25,7 +25,7 @@ This is a web application built with **Flask** for managing a small library's co
 
 ---
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 Follow these steps to get the project running on your local machine.
 
@@ -73,9 +73,9 @@ http://127.0.0.1:5000/
 
 ### Notes on Database
 The application uses two SQLite database files:
-|
-|- library.db: Likely stores the book and member records.
-|- borrows.db: Likely tracks the loan transactions.
+
+| ibrary.db: Likely stores the book and member records. |
+| borrows.db: Likely tracks the loan transactions. |
 
 These files will be created (or already exist) when you run the application.
 
